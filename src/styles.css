@@ -4,3 +4,20 @@
 body {
     margin: 0;
 }
+
+.row {
+    width: 100%;
+}
+
+.center-wrapper {
+    text-align: center;
+}
+
+.new-board-wrapper {
+    padding: 50px;
+}
+
+.new-board-button {
+    display: inline-block;
+    text-align: center;
+}
