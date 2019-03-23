@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>New Retrospective Board</h2>
+
+<mat-dialog-content [formGroup]="form">  
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Board Name" formControlName="boardName">
+    </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button mat-primary full-width"(click)="create()">Create</button>
+</mat-dialog-actions>

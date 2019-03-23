@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'; 
+import { HomeComponent } from './home/home.component';
+import { BoardComponent } from './board/board.component';
+import { NewBoardDialogComponent } from './new-board-dialog/new-board-dialog.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Angular Material Components
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -36,14 +41,13 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import { HomeComponent } from './home/home.component';
-import { BoardComponent } from './board/board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BoardComponent
+    BoardComponent,
+    NewBoardDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -79,9 +83,13 @@ import { BoardComponent } from './board/board.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [NewBoardDialogComponent]
 })
 export class AppModule { }
