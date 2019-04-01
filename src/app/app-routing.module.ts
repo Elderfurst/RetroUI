@@ -5,8 +5,7 @@ import { BoardComponent } from './board/board.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'board/new', component: BoardComponent },
-  { path: 'board/:guid:', component: BoardComponent }
+  { path: 'board/:guid', component: BoardComponent }
 ];
 
 @NgModule({

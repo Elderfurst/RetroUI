@@ -25,3 +25,7 @@ body {
 .full-width {
     width: 100%;
 }
+
+.pointer {
+    cursor: pointer;
+}
